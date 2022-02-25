@@ -10,8 +10,27 @@ def prime_num():
             continue
         if count < 2:
             prime_list.append(i)
-    print(prime_list)
+    return prime_list
+
+
+def palindrome(number):
+    temp = number
+    _number = 0
+    while temp != 0:
+        _temp = temp % 10
+        _number = _number*10 + _temp
+        temp = temp//10
+    if _number == number:
+        return 1
+    else:
+        return
 
 
 if __name__ == "__main__":
-    prime_num()
+    palindrome_list = []
+    prime_list = prime_num()
+    for i in prime_list:
+        if palindrome(i):
+            palindrome_list.append(i)
+    print(prime_list)
+    print(palindrome_list)
