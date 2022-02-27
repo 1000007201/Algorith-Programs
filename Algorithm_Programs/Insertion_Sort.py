@@ -17,3 +17,4 @@ if __name__ == "__main__":
     arr = [i for i in sample_string]
     print(f"Unsorted List:\n{arr}")
     print(f"Sorted List:\n{insertion_sort(arr)}")
+
